@@ -211,25 +211,11 @@ const Display_profile=() => {
             <div className="col-lg-3 col-md-6 footer-links">
               <h4>Links</h4>
               <ul>
-                <li>
-                  <i className="bx bx-chevron-right" /> <a href="#">Home</a>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right" />
-                  <a href="stud_about.html">About us</a>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right" />
-                  <a href="stud_journal.html">Journals</a>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right" />
-                  <a href="stud_competition.html">Competition</a>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right" />
-                  <a href="stud_feedback.html">Feedback</a>
-                </li>
+              <li><i className="bx bx-chevron-right" /> <a href="/">Home</a></li>
+                <li><i className="bx bx-chevron-right" /> <a href="stud_about">About us</a></li>
+                <li><i className="bx bx-chevron-right" /> <a href="stud_journal">Journals</a></li>
+                <li><i className="bx bx-chevron-right" /> <a href="stud_competition">Competition</a></li>
+                <li><i className="bx bx-chevron-right" /> <a href="stud_feedback">Feedback</a></li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 footer-links">
