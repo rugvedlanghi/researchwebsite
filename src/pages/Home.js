@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home=() => {
   return (
@@ -9,12 +10,24 @@ const Home=() => {
             <h4 className="logo"><a href="index.html">Research Portal</a></h4>
             <nav id="navbar" className="navbar">
               <ul>
-                <li><a className="nav-link scrollto active" href="#">Home</a></li>
-                <li><a className="nav-link scrollto" href="stud_about.html">About</a></li>
-                <li><a className="nav-link scrollto" href="stud_journal.html">Journals</a></li>
-                <li><a className="nav-link scrollto" href="stud_competition.html">Competition</a></li>
-                <li><a className="nav-link scrollto " href="display_profile.html">Profiles</a></li>
-                <li><a className="nav-link scrollto " href="Researchpaper.html">Research Paper</a></li>
+              <Link to="/">
+            <li><a className='nav-link scrollto'>Home</a></li>
+            </Link>
+            <Link to="/stud_about">
+            <li><a className='nav-link scrollto'>about</a></li>
+            </Link>
+            <Link to="/stud_journal">
+            <li> <a className='nav-link scrollto'>journal</a></li>
+            </Link>
+            <Link to="/competitions">
+            <li> <a className='nav-link scrollto'>competitions</a></li>
+            </Link>
+            <Link to="/edit_profiles">
+            <li> <a className='nav-link scrollto'>Profiles</a></li>
+            </Link>
+            <Link to="/research_paper">
+            <li> <a className='nav-link scrollto'>Research Papers</a></li>
+            </Link>
                 <li className="dropdown"><a href="#"><span>other</span> <i className="bi bi-chevron-down" /></a>
                   <ul>
                     <li className="dropdown"><a href="#"><span>Publication</span> <i className="bi bi-chevron-right" /></a>
@@ -34,7 +47,9 @@ const Home=() => {
                     </li>
                   </ul>
                 </li>
-                <li><a className="nav-link scrollto" href="stud_feedback.html">Feedback</a></li>
+                <Link to='/stud_feedback'>
+            <li><a className="nav-link scrollto">Feedback</a></li>
+            </Link>
                 <li><a className="getstarted scrollto" href="login/login.html">Login</a></li>
               </ul>
               <i className="bi bi-list mobile-nav-toggle" />
