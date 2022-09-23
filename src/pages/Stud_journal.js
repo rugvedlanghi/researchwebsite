@@ -1,8 +1,36 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
+import Journal_component from '../component/Journal_component';
+import SpringerApiComponent from '../component/SpringerApi'; 
 import {
   Link,
 } from "react-router-dom";
 const Stud_journal=() => {
+  const APP_ID= "4cda16a8d96a74bed2bbd565aae6abec";
+  const [search,setSearch] =useState("");
+  const [journals,setJournals] =useState([]);
+  const [query,setQuery] =useState("");
+
+  useEffect(() => {
+    geturl();
+  },[query]);
+
+  const geturl = async () => {
+    const response = await fetch(`https://api.springernature.com/metadata/json?q=name:${query}&api_key=${APP_ID}`);
+    const data = await response.json();
+    setJournals(data.records);
+    // console.log(data.records);
+  }
+
+  const updateSearch = (e) => {
+    setSearch(e.target.value);
+    // console.log(search);
+  };
+
+  const getSearch = (e) => {
+    e.preventDefault();
+    setQuery(search);
+  }
   return (
     <div>
     {/* ======= Header ======= */}
@@ -64,9 +92,18 @@ const Stud_journal=() => {
         <br /><br /><br />
       </div>
       <section>
-        <div className="p-5"><h2>  Journals</h2>
-          <p>You can find Journal from IEEE. </p>
-        </div>
+        <SpringerApiComponent/>
+      {/* <form onSubmit={getSearch} >
+        <h2>Springer</h2>
+        <input value={search} onChange={updateSearch} type="text" />
+        <button>Search</button>
+      </form>
+        <div className="p-5">
+          
+          {journals.map(journals =>(
+        <Journal_component key={journals.title} title={journals.title} publisher={journals.publisher} abstract={journals.abstract}/>
+      ))}
+        </div> */}
         <div className="black-font searchbar">
           <div className="gcse-search">
           </div>
