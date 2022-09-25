@@ -76,6 +76,9 @@ const Stud_journal=() => {
           </div>
         </div> */}
       </section>
+      <div>
+        <br /><br /><br />
+      </div>
     </main>
     {/* ======= Footer ======= */}
     <footer className='ft' id="footer">

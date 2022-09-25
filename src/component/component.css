@@ -1,3 +1,8 @@
 .er{
+    text-align: center;
     width: 50%;
+    padding: 1rem;
+}
+.journals{
+text-align: left;
 }
