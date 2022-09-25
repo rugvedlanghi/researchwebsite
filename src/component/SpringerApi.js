@@ -1,5 +1,7 @@
-import Journal_component from './Journal_component';
+import Springer_JC from './Springer_JC';
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const SpringerApiComponent=()=> {
     const APP_ID= "4cda16a8d96a74bed2bbd565aae6abec"
@@ -30,15 +32,15 @@ const SpringerApiComponent=()=> {
       setQuery(search);
     }
   return (
-    <div>
+    <div className='er'>
         <form onSubmit={getSearch} >
-            <h2>Springer</h2>
+            <h2>SPRINGER</h2>
             <input value={search} onChange={updateSearch} type="text" />
-            <button>Search</button>
+            <button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
         </form>
-        <div className="p-5">
+        <div>
           {journals.map(journals =>(
-                <Journal_component key={journals.title} title={journals.title} publisher={journals.publisher} abstract={journals.abstract}/>
+                <Springer_JC key={journals.title} title={journals.title} publisher={journals.publisher} abstract={journals.abstract}/>
         ))}
         </div>
     </div>

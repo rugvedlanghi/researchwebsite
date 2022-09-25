@@ -1,10 +1,10 @@
-import Eric_JC from '../component/Eric_JC';
 import { useEffect, useState } from 'react';
+import Eric_JC from './Eric_JC';
+import './component.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
-const Test=() => {
-    const APP_ID= "4cda16a8d96a74bed2bbd565aae6abec"
-    
-    // const url= `https://api.springernature.com/metadata/json?q=name:hughes%20year:2014&s=1&p=5&api_key=${APP_ID}`;
+const Eric_API=() => {
   
     const [search,setSearch] =useState("");
     const [journals,setJournals] =useState([]);
@@ -31,13 +31,13 @@ const Test=() => {
       setQuery(search);
     }
   return (
-    <div>
+    <div className='er'>
         <form onSubmit={getSearch} >
-            <h2>Springer</h2>
+            <h2>ERIC</h2>
             <input value={search} onChange={updateSearch} type="text" />
-            <button>Search</button>
+            <button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
         </form>
-        <div className="p-5">
+        <div>
           {journals.map(journals =>(
                 <Eric_JC key={journals.id} title={journals.title} author={journals.author} publicationyear={journals.publicationdateyear} description={journals.description }/>
         ))}
@@ -47,4 +47,4 @@ const Test=() => {
   )
 }
 
-export default Test;
+export default Eric_API;

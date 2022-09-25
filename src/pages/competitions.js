@@ -65,7 +65,9 @@ const Competition=() => {
               <div className="d-flex justify-content-between align-items-center">
                 <h2>Competition Details</h2>
                 <ol>
-                  <li><a href="index.html">Home</a></li>
+                 <Link to= '/Home'>
+                  <li><a>Home</a></li>
+                  </Link> 
                   <li><a href="stud_competition.html">Competition</a></li>
                   <li>Competition Details</li>
                 </ol>
