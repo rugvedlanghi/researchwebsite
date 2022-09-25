@@ -1,10 +1,62 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import './Home_Page.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import "./Home_Page.css";
+import Springer_JC from "../component/Springer_JC";
+import Eric_JC from "../component/Eric_JC";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass,faClose } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+  const [search, setSearch] = useState("");
+  const [springerJournals, setSpringerJournals] = useState([]);
+  const [ericJournals, setEricJournals] = useState([]);
+  const [query, setQuery] = useState("");
+
+  // common functions
+  useEffect(() => {
+    geturl();
+  }, [query]);
+  
+  const updateSearch = (e) => {
+    setSearch(e.target.value);
+    // console.log(search);
+  };
+
+  const getSearch = (e) => {
+    e.preventDefault();
+    setQuery(search);
+  };
+
+  const APP_ID = "4cda16a8d96a74bed2bbd565aae6abec";
+  const geturl = async () => {
+    const springerresponse = await fetch(
+      `https://api.springernature.com/metadata/json?q=name:${query}&api_key=${APP_ID}`
+    );
+    const ericresponse = await fetch(
+      `https://api.ies.ed.gov/eric/?search=${query}&format=json&start=10&rows=10`
+    );
+    const data1 = await springerresponse.json();
+    const data2 = await ericresponse.json();
+    setSpringerJournals(data1.records);
+    setEricJournals(data2.response.docs);
+    // console.log(data1.records);
+    // console.log(data2.response.docs);
+  };
+  const searchClose = async () =>{
+    const springerresponse = await fetch(
+      `https://api.springernature.com/metadata/json?q=name:""&api_key=${APP_ID}`
+    );
+    const ericresponse = await fetch(
+      `https://api.ies.ed.gov/eric/?search=""&format=json&start=10&rows=10`
+    );
+    const data1 = await springerresponse.json();
+    const data2 = await ericresponse.json();
+    setSpringerJournals(data1.records);
+    setEricJournals(data2.response.docs);
+    // console.log(data1.records);
+    // console.log(data2.response.docs);
+  }
   return (
     <div>
       {/* ======= Header ======= */}
@@ -124,7 +176,28 @@ const Home = () => {
                 <div className="carousel-container">
                   <div className="carousel-content">
                     <h2>Search</h2>
-                    <div className="wrap">
+                    <form onSubmit={getSearch}>
+                      <div className="wrap">
+                        <div className="search">
+                          <input
+                            value={search}
+                            onChange={updateSearch}
+                            type="text"
+                            className="searchTerm"
+                            placeholder="What are you looking for?"
+                          />
+                          <button className="closeButton" onClick={searchClose}>
+                            <FontAwesomeIcon icon={faClose}/>
+                          </button>
+                          <button className="searchButton">
+                            <FontAwesomeIcon
+                              icon={faMagnifyingGlass}
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    {/* <div className="wrap">
                       <div className="search">
                         <input
                           type="text"
@@ -132,10 +205,10 @@ const Home = () => {
                           placeholder="What are you looking for?"
                         />
                         <button type="submit" className="searchButton">
-                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                          <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </button>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="black-font searchbar">
                       <div className="gcse-search"></div>
                     </div>
@@ -187,6 +260,29 @@ const Home = () => {
         </div>
       </section>
       <main id="main">
+        <section className="home_journal">
+          <div>
+          {ericJournals.map((journal) => (
+            <Eric_JC
+              key={journal.id}
+              title={journal.title}
+              author={journal.author}
+              publicationyear={journal.publicationdateyear}
+              description={journal.description}
+            />
+          ))}
+          </div>
+          <div>
+          {springerJournals.map((journal) => (
+            <Springer_JC
+              key={journal.title}
+              title={journal.title}
+              publisher={journal.publisher}
+              abstract={journal.abstract}
+            />
+          ))}
+          </div>
+        </section>
         <section id="counts" className="counts">
           <div className="container">
             <br />

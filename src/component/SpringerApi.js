@@ -4,9 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const SpringerApiComponent=()=> {
-    const APP_ID= "4cda16a8d96a74bed2bbd565aae6abec"
-    // const url= `https://api.springernature.com/metadata/json?q=name:hughes%20year:2014&s=1&p=5&api_key=${APP_ID}`;
-  
+    const APP_ID= "4cda16a8d96a74bed2bbd565aae6abec";
     const [search,setSearch] =useState("");
     const [journals,setJournals] =useState([]);
     const [query,setQuery] =useState("");
