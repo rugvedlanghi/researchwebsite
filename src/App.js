@@ -16,6 +16,7 @@ import Stud_competition from './pages/Stud_competition';
 import Stud_journal from './pages/Stud_journal';
 import Stud_feedback from './pages/Stud_feedback';
 import Test from './pages/Test';
+import Login from './pages/Login';
 
 const App=()=> {
   return (
@@ -32,6 +33,7 @@ const App=()=> {
         <Route path="/stud_journal" element={<Stud_journal/>} />
         <Route path="/" exact element={<Home/>}/>
         <Route path="/test" exact element={<Test/>}/>
+        <Route path="/Login" exact element={<Login/>}/>
       </Routes>
     </BrowserRouter>
   );
