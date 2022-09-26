@@ -84,31 +84,38 @@ const Edit_profile=() => {
                       <h4 className="text-right">Profile Settings</h4>
                     </div>
                     <div className="row mt-2">
-                      <div className="col-md-6"><label className="labels">Name</label><input type="text" className="form-control" placeholder="first name" defaultValue required /></div>
-                      <div className="col-md-6"><label className="labels">Surname</label><input type="text" className="form-control" defaultValue placeholder="surname" required /></div>
+                      <div className="col-md-6"><label className="labels">Name</label><input type="text" className="form-control" placeholder="first name" required /></div>
+                      <div className="col-md-6"><label className="labels">Surname</label><input type="text" className="form-control"  placeholder="surname" required /></div>
                     </div>
                     <div className="row mt-3">
-                      <div className="col-md-12"><label className="labels">Mobile Number</label><input type="text" className="form-control" placeholder="enter phone number" defaultValue /></div>
-                      <div className="col-md-12"><label className="labels">Education</label><input type="text" className="form-control" placeholder="enter data " defaultValue /></div>
-                      <div className="col-md-12"><label className="labels">Qualification</label><input type="text" className="form-control" placeholder="enter data " defaultValue /></div>
-                      <div className="col-md-12"><label className="labels">info</label><input type="text" className="form-control" placeholder="enter data " defaultValue /></div>
-                      <div className="col-md-12"><label className="labels">info</label><input type="text" className="form-control" placeholder="enter data " defaultValue /></div>
-                      <div className="col-md-12"><label className="labels">info</label><input type="text" className="form-control" placeholder="enter data " defaultValue /></div>
-                      <div className="col-md-12"><label className="labels">info</label><input type="text" className="form-control" placeholder="enter data" defaultValue /></div>
-                      <div className="col-md-12"><label className="labels">info</label><input type="text" className="form-control" placeholder="enter data" defaultValue /></div>
+                      <div className="col-md-12"><label className="labels">Mobile Number</label><input type="text" className="form-control" placeholder="enter phone number"  /></div>
+                      <div className="col-md-12"><label className="labels">Education</label><input type="text" className="form-control" placeholder="enter data "  /></div>
+                      <div className="col-md-12"><label className="labels">Qualification</label><input type="text" className="form-control" placeholder="enter data "  /></div>
+                      <div className="col-md-12"><label className="labels">Area of Research</label><input type="text" className="form-control" placeholder="enter data "  /></div>
+                      <div className="col-md-12"><label className="labels">Specialization area</label><input type="text" className="form-control" placeholder="enter data "  /></div>
+                      <div className="col-md-12"><label className="labels">Technical skills</label><input type="text" className="form-control" placeholder="enter data "  /></div>
+                      <div className="col-md-12"><label className="labels">Member of Committes</label><input type="text" className="form-control" placeholder="enter data"  /></div>
+                      <div className="col-md-12"><label className="labels">Certification</label><input type="text" className="form-control" placeholder="enter data"  /></div>
+                      <div className="col-md-12"><label className="labels">Acknowledgement</label><input type="text" className="form-control" placeholder="enter data"  /></div>
+                      <div className="col-md-12"><label className="labels">Short term training programs attended</label><input type="text" className="form-control" placeholder="enter data"  /></div>
+                      <div className="col-md-12"><label className="labels">Papers presented and published</label><input type="text" className="form-control" placeholder="enter data"  /></div>
+                      <div className="col-md-12"><label className="labels">Projects Guided</label><input type="text" className="form-control" placeholder="enter data"  /></div>
+                      <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" placeholder="enter data"  /></div>
                     </div>
-                    <div className="row mt-3">
-                      <div className="col-md-6"><label className="labels">info</label><input type="text" className="form-control" placeholder defaultValue /></div>
-                      <div className="col-md-6"><label className="labels">info</label><input type="text" className="form-control" defaultValue placeholder /></div>
-                    </div>
+                    
+                    {/* <div className="row mt-3"> */}
+                      {/* <div className="col-md-6"><label className="labels">Projects Guided</label><input type="text" className="form-control" placeholder  /></div>
+                      <div className="col-md-6"><label className="labels">info</label><input type="text" className="form-control"  placeholder /></div> */}
+                      
+                    {/* </div> */}
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="p-3 py-5">
-                    <div className="d-flex justify-content-between align-items-center experience"><span>Edit
-                        Experience</span><span className="border px-3 p-1 add-experience"><i className="fa fa-plus" />&nbsp;Experience</span></div><br />
-                    <div className="col-md-12"><label className="labels">info</label><input type="text" className="form-control" placeholder="experience" defaultValue /></div> <br />
-                    <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" placeholder="additional details" defaultValue /></div>
+                    {/* <div className="d-flex justify-content-between align-items-center experience"><span>Edit
+                        Experience</span><span className="border px-3 p-1 add-experience"><i className="fa fa-plus" />&nbsp;Experience</span></div><br /> */}
+                    <div className="col-md-12"><label className="labels">Experience</label><input type="text" className="form-control" placeholder="experience" /></div> <br />
+                    <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" placeholder="additional details"  /></div>
                   </div>
                 </div>
                 <div className="mt-5 text-center"><button className="btn btn-primary profile-button" type="button">Save Profile</button></div>
