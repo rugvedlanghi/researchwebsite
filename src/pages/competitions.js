@@ -1,5 +1,5 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import React from 'react'
 
 const Competition=() => {
   return (
@@ -49,75 +49,160 @@ const Competition=() => {
                     </li>
                   </ul>
                 </li>
-                <Link to='/stud_feedback'>
-            <li><a className="nav-link scrollto">Feedback</a></li>
-            </Link>
+                <li><a className="nav-link scrollto" href="stud_feedback.html">Feedback</a></li>
                 <li><a className="getstarted scrollto" href="#">Login</a></li>
               </ul>
               <i className="bi bi-list mobile-nav-toggle" />
             </nav>{/* .navbar */}
           </div>
         </header>{/* End Header */}
-        <main id="main">
-          {/* ======= Breadcrumbs ======= */}
-          <section id="breadcrumbs" className="breadcrumbs">
+        <main>
+          <div>
+            <br /><br /><br />
+          </div>
+          {/* ======= Portfolio Section ======= */}
+          <section id="portfolio" className="portfolio">
             <div className="container">
-              <div className="d-flex justify-content-between align-items-center">
-                <h2>Competition Details</h2>
-                <ol>
-                 <Link to= '/Home'>
-                  <li><a>Home</a></li>
-                  </Link> 
-                  <li><a href="stud_competition.html">Competition</a></li>
-                  <li>Competition Details</li>
-                </ol>
+              <div className="section-title">
+                <h2>Portfolio</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+                  in iste officiis commodi quidem hic quas.</p>
               </div>
-            </div>
-          </section>{/* End Breadcrumbs */}
-          {/* ======= Portfolio Details Section ======= */}
-          <section id="competition-details" className="competition-details">
-            <div className="container">
-              <div className="row gy-4">
-                <div className="col-lg-8">
-                  <div className="competition-details-slider swiper">
-                    <div className="swiper-wrapper align-items-center">
-                      <div className="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-1.jpg" alt="" />
-                      </div>
-                      <div className="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-2.jpg" alt="" />
-                      </div>
-                      <div className="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-3.jpg" alt="" />
+              <div className="row">
+                <div className="col-lg-12 d-flex justify-content-center">
+                  <ul id="portfolio-flters">
+                    <li data-filter="*" className="filter-active">All</li>
+                    <li data-filter=".filter-app">Future</li>
+                    <li data-filter=".filter-card">Current</li>
+                    <li data-filter=".filter-web">old</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row portfolio-container">
+                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-1.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition </h4>
+                      <p>date</p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bx bx-plus" /></a>
+                        <a href="Competitions_details" title="More Details"><i className="bx bx-link" /></a>
                       </div>
                     </div>
-                    <div className="swiper-pagination" />
                   </div>
                 </div>
-                <div className="col-lg-4">
-                  <div className="portfolio-info">
-                    <h3>Information</h3>
-                    <ul>
-                      <li><strong>Date</strong>: 01 March, 2020</li>
-                      <li><strong>Category</strong>: Web design</li>
-                      <li><strong>Eligibility</strong>: abc</li>
-                      <li><strong>Fee</strong>: Rs 100</li>
-                      <li><strong>Prize</strong>: Rs 10000</li>
-                      <li><strong>Sponsorships</strong>: XYZ</li>
-                      <li><strong>For More Details</strong>: <a href="stud_competition.html">www.example.com</a></li>
-                    </ul>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-2.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition</h4>
+                      <p>Date</p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus" /></a>
+                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                      </div>
+                    </div>
                   </div>
-                  <div className="portfolio-description">
-                    <h2>About the competition</h2>
-                    <p>
-                      Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-                    </p>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-3.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition</h4>
+                      <p>Date</p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 2"><i className="bx bx-plus" /></a>
+                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition</h4>
+                      <p>Date</p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 2"><i className="bx bx-plus" /></a>
+                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition</h4>
+                      <p>Date</p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 2"><i className="bx bx-plus" /></a>
+                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition</h4>
+                      <p>date</p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 3"><i className="bx bx-plus" /></a>
+                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition</h4>
+                      <p>Date</p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 1"><i className="bx bx-plus" /></a>
+                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition</h4>
+                      <p>Date</p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 3"><i className="bx bx-plus" /></a>
+                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <div className="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt="" />
+                    <div className="portfolio-info">
+                      <h4>Name Competition</h4>
+                      <p>
+                        date
+                      </p>
+                      <div className="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus" /></a>
+                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>{/* End Portfolio Details Section */}
-        </main>{/* End #main */}
+          </section>{/* End Portfolio Section */}
+        </main>
         {/* ======= Footer ======= */}
         <footer id="footer">
           <div className="footer-top">
@@ -146,11 +231,12 @@ const Competition=() => {
                 <div className="col-lg-3 col-md-6 footer-links">
                   <h4>Links</h4>
                   <ul>
-                  <li><i className="bx bx-chevron-right" /> <a href="/">Home</a></li>
-                <li><i className="bx bx-chevron-right" /> <a href="stud_about">About us</a></li>
-                <li><i className="bx bx-chevron-right" /> <a href="stud_journal">Journals</a></li>
-                <li><i className="bx bx-chevron-right" /> <a href="stud_competition">Competition</a></li>
-                <li><i className="bx bx-chevron-right" /> <a href="stud_feedback">Feedback</a></li>
+                    <li><i className="bx bx-chevron-right" /> <a href="index.html">Home</a></li>
+                    <li><i className="bx bx-chevron-right" /> <a href="stud_about.html">About us</a></li>
+                    <li><i className="bx bx-chevron-right" /> <a href="stud_journal.html">Journals</a></li>
+                    <li><i className="bx bx-chevron-right" /> <a href="stud_competition.html">Competition</a></li>
+                    <li><i className="bx bx-chevron-right" /> <a href="Researchpaper.html">Research paper</a></li>
+                    <li><i className="bx bx-chevron-right" /> <a href="stud_feedback.html">Feedback</a></li>
                   </ul>
                 </div>
                 <div className="col-lg-3 col-md-6 footer-links">

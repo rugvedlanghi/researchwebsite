@@ -6,7 +6,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Competition from './pages/competitions';
+import Competition from './pages/Competitions';
 import Display_profile from './pages/display_profile';
 import Dprofile_detail from './pages/dprofile_detail';
 import Edit_profile from './pages/edit_profile';
@@ -17,12 +17,13 @@ import Stud_journal from './pages/Stud_journal';
 import Stud_feedback from './pages/Stud_feedback';
 import Test from './pages/Test';
 import Login from './pages/Login';
+import Competitions_details from './pages/Competitions_details';
 
 const App=()=> {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/competitions"element={<Competition/>} />
+        <Route path="/Competitions"element={<Competition/>} />
         <Route path="/dprofile_details" element={<Dprofile_detail/>} />
         <Route path="/display_profile" element={<Display_profile/>} />
         <Route path="/edit_profiles" element={<Edit_profile/>} />
@@ -34,6 +35,7 @@ const App=()=> {
         <Route path="/" exact element={<Home/>}/>
         <Route path="/test" exact element={<Test/>}/>
         <Route path="/Login" exact element={<Login/>}/>
+        <Route path="/competitions_details" exact element={<Competitions_details/>} />
       </Routes>
     </BrowserRouter>
   );
