@@ -36,7 +36,12 @@
     transform: rotate(360deg);
   }
 }
-
+/* button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: 'bootstrap-icons';
+  font-size: -webkit-xxx-large;
+  line-height: initial;
+} */
 .stud_js{
   display: flex;
   justify-content: center;

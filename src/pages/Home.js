@@ -283,7 +283,7 @@ const Home = () => {
           ))}
           </div>
         </section>
-        <section id="counts" className="counts">
+        {/* <section id="counts" className="counts">
           <div className="container">
             <br />
             <br />
@@ -347,7 +347,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section id="faq" className="faq section-bg">
           <div className="container">
             <div className="section-title">
