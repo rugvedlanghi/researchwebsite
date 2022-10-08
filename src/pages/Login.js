@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
-//import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 const  Login=() =>{
-  //const history=useHistory();
+  const navigate=useNavigate();
   const [user,setUser] = useState({
     name:"",password:""
   });
@@ -33,7 +33,7 @@ const PostData =async(e)=>{
  else{
   window.alert("Registration Successfull");
   console.log("Successfull Registration");
- // history.push("/");
+  navigate('/');
  }
 }
 
