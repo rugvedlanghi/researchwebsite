@@ -40,13 +40,13 @@ const PostData =async(e)=>{
 
   return (
    
-       <div className="container bg-dark">
+       <div className="container pt-5">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 ">
           </div>
           <div className="col-md-6 main ">
             <form  method="POST">
-              <h2>Login </h2>
+              <h2 className="text-primary pt-3 mb-3">Login </h2>
               <input type="text" className="box text-black" id="name" name="name" 
               value={user.name}
               onChange={handleInputs}
@@ -58,8 +58,11 @@ const PostData =async(e)=>{
               onChange={handleInputs}
                placeholder="Password" required />
               <br />
-              <input type="submit" defaultValue="Submit" id="submit" onClick={PostData}/>
-            </form>
+              <br />
+              <br />
+              
+              <input  type="submit" defaultValue="Submit" id="submit" onClick={PostData}/>
+              </form>
           </div>
           <div className="col-md-3">
           </div>
