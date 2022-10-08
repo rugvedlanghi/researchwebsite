@@ -24,7 +24,7 @@ const Edit_profile=() => {
             <Link to="/competitions">
             <li> <a className='nav-link scrollto'>competitions</a></li>
             </Link>
-            <Link to="/edit_profiles">
+            <Link to="/Stud_new_Profile">
             <li> <a className='nav-link scrollto'>Profiles</a></li>
             </Link>
             <Link to="/research_paper">
@@ -153,7 +153,7 @@ const Edit_profile=() => {
                     <li><i className="bx bx-chevron-right" /> <a href="/">Home</a></li>
                 <li><i className="bx bx-chevron-right" /> <a href="stud_about">About us</a></li>
                 <li><i className="bx bx-chevron-right" /> <a href="stud_journal">Journals</a></li>
-                <li><i className="bx bx-chevron-right" /> <a href="stud_competition">Competition</a></li>
+                <li><i className="bx bx-chevron-right" /> <a href="Competitions">Competition</a></li>
                 <li><i className="bx bx-chevron-right" /> <a href="stud_feedback">Feedback</a></li>
                     </ul>
                   </div>

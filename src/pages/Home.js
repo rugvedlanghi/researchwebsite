@@ -87,7 +87,7 @@ const Home = () => {
                   <a className="nav-link scrollto">competitions</a>
                 </li>
               </Link>
-              <Link to="/edit_profiles">
+              <Link to="/Stud_new_Profile">
                 <li>
                   <a className="nav-link scrollto">Profiles</a>
                 </li>
@@ -528,7 +528,7 @@ const Home = () => {
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="stud_competition">Competition</a>
+                    <a href="Competitions">Competition</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
