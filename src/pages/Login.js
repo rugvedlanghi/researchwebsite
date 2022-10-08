@@ -15,8 +15,8 @@ const  Login=() =>{
   }
 const PostData =async(e)=>{
   e.preventDefault();
-  const {name,pasword}= user;
-  const res= await fetch("/register",{
+  const {name,password}= user;
+  const res= await fetch("/Login",{
     method:"POST",
     headers:{
       "Content-Type":"application/json"
@@ -51,10 +51,7 @@ const PostData =async(e)=>{
               value={user.name}
               onChange={handleInputs}
               placeholder="Username" required />
-              {/* <br>
-                    <input type="text" class="box" id="email" name="email" placeholder="Email" required />
-                     <br> */}
-              {/* <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required /> */}
+              
               <br /> 
               <input type="password" className="box text-black" id="password" name="password"
               value={user.password}
