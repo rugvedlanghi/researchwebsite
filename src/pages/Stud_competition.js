@@ -34,6 +34,11 @@ const Stud_competition = () => {
                         <li><a href="#">Formats</a></li>
                       </ul>
                     </li>
+                    <li className="dropdown">
+                    <a href="/edit_profile">
+                      <span>Edit Profile</span>{" "}
+                    </a>
+                  </li>
                   </ul>
                 </li>
                 <Link to="/stud_feedback">

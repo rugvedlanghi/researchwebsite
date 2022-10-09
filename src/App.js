@@ -19,11 +19,15 @@ import Test from './pages/Test';
 import Login from './pages/Login';
 import Competitions_details from './pages/Competitions_details';
 import Stud_new_Profile from './pages/Stud_new_Profile';
+import Task_assign from './pages/Task_assign';
+import Report from './pages/Report';
 
 const App=()=> {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/Task_assign" element={<Task_assign/>} />
+        <Route path="/Report" element={<Report/>} />
         <Route path="/Competitions" element={<Competitions/>} />
         <Route path="/dprofile_detail" element={<Dprofile_detail/>} />
         <Route path="/display_profile" element={<Display_profile/>} />

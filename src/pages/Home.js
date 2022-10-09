@@ -97,6 +97,11 @@ const Home = () => {
                   <a className="nav-link scrollto">Research Papers</a>
                 </li>
               </Link>
+              <Link to="/Task_assign">
+                <li>
+                  <a className="nav-link scrollto">Task Assign</a>
+                </li>
+              </Link>
               <li className="dropdown">
                 <a href="#">
                   <span>other</span> <i className="bi bi-chevron-down" />
@@ -141,6 +146,11 @@ const Home = () => {
                         <a href="#">Formats</a>
                       </li>
                     </ul>
+                  </li>
+                  <li className="dropdown">
+                    <a href="/edit_profile">
+                      <span>Edit Profile</span>{" "}
+                    </a>
                   </li>
                 </ul>
               </li>

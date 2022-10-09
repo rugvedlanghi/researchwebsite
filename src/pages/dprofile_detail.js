@@ -13,25 +13,44 @@ const Dprofile_detail=() => {
         <nav id="navbar" className="navbar">
           <ul>
           <Link to="/">
-            <li><a className='nav-link scrollto'>Home</a></li>
-            </Link>
-            <Link to="/stud_about">
-            <li><a className='nav-link scrollto'>about</a></li>
-            </Link>
-            <Link to="/stud_journal">
-            <li> <a className='nav-link scrollto'>journal</a></li>
-            </Link>
-            <Link to="/competitions">
-            <li> <a className='nav-link scrollto'>competitions</a></li>
-            </Link>
-            <Link to="/Stud_new_Profile">
-            <li> <a className='nav-link scrollto'>Profiles</a></li>
-            </Link>
-            <Link to="/research_paper">
-            <li> <a className='nav-link scrollto'>Research Papers</a></li>
-            </Link>
-            <li className="dropdown">
-              <a href="#"><span>other</span> <i className="bi bi-chevron-down" /></a>
+                <li>
+                  <a className="nav-link scrollto">Home</a>
+                </li>
+              </Link>
+              <Link to="/stud_about">
+                <li>
+                  <a className="nav-link scrollto">about</a>
+                </li>
+              </Link>
+              <Link to="/stud_journal">
+                <li>
+                  <a className="nav-link scrollto">journal</a>
+                </li>
+              </Link>
+              <Link to="/competitions">
+                <li>
+                  <a className="nav-link scrollto">competitions</a>
+                </li>
+              </Link>
+              <Link to="/Stud_new_Profile">
+                <li>
+                  <a className="nav-link scrollto">Profiles</a>
+                </li>
+              </Link>
+              <Link to="/research_paper">
+                <li>
+                  <a className="nav-link scrollto">Research Papers</a>
+                </li>
+              </Link>
+              <Link to="/Task_assign">
+                <li>
+                  <a className="nav-link scrollto">Task Assign</a>
+                </li>
+              </Link>
+              <li className="dropdown">
+                <a href="#">
+                  <span>other</span> <i className="bi bi-chevron-down" />
+                </a>
               <ul>
                 <li className="dropdown">
                   <a href="#"><span>Publication</span> <i className="bi bi-chevron-right" /></a>
@@ -57,6 +76,11 @@ const Dprofile_detail=() => {
                     <li><a href="#">Formats</a></li>
                   </ul>
                 </li>
+                <li className="dropdown">
+                    <a href="/edit_profile">
+                      <span>Edit Profile</span>{" "}
+                    </a>
+                  </li>
               </ul>
             </li>
             <Link to="/stud_feedback">
