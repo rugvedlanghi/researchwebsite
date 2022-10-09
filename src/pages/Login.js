@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import "../css/login.css";
 import {useNavigate} from 'react-router-dom'
 
 const  Login=() =>{
@@ -40,26 +41,29 @@ const PostData =async(e)=>{
 
   return (
    
-       <div className="container bg-dark">
+       <div className="container loginbody pt-5">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 ">
           </div>
-          <div className="col-md-6 main ">
+          <div className="col-md-6 loginmain ">
             <form  method="POST">
-              <h2>Login </h2>
-              <input type="text" className="box text-black" id="name" name="name" 
+              <h2 className="text-primary pt-3 mb-3">Login </h2>
+              <input  type="text" className=" ibutton box text-black" id="name" name="name" 
               value={user.name}
               onChange={handleInputs}
               placeholder="Username" required />
               
               <br /> 
-              <input type="password" className="box text-black" id="password" name="password"
+              <input  type="password" className="ibutton box text-black" id="password" name="password"
               value={user.password}
               onChange={handleInputs}
                placeholder="Password" required />
               <br />
-              <input type="submit" defaultValue="Submit" id="submit" onClick={PostData}/>
-            </form>
+              <br />
+              <br />
+              
+              <input className='isubmit' type="submit" defaultValue="Submit" id="submit" onClick={PostData}/>
+              </form>
           </div>
           <div className="col-md-3">
           </div>
