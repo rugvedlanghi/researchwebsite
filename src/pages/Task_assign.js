@@ -83,10 +83,16 @@ const Task_assign=() => {
                   </li>
                   </ul>
                 </li>
+                <Link to="/stud_feedback">
                 <li>
-                  <a className="nav-link scrollto" href="stud_feedback.html">Feedback</a>
+                  <a className="nav-link scrollto">Feedback</a>
                 </li>
-                <li><a className="getstarted scrollto" href="#about">Login</a></li>
+              </Link>
+            <Link to="/Login">
+                <li>
+                  <a className="getstarted scrollto">Login</a>
+                </li>
+              </Link>
               </ul>
               <i className="bi bi-list mobile-nav-toggle" />
             </nav>
