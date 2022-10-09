@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 
-const Competition=() => {
+const Competitions=() => {
   return (
     <div>
         {/* ======= Header ======= */}
@@ -90,7 +90,7 @@ const Competition=() => {
               <div className="row portfolio-container">
                 <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/mum_hack.jpeg" className="img-fluid " alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition </h4>
                       <p>date</p>
@@ -320,4 +320,4 @@ const Competition=() => {
       </div>
   )
 }
-export default Competition 
+export default Competitions;

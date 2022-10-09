@@ -171,7 +171,7 @@ const Home = () => {
             <div className="carousel-inner" role="listbox">
               <div
                 className="carousel-item active"
-                style={{ backgroundImage: "url(assets/img/slide/slide-1.jpg)" }}
+                style={{ backgroundImage: "url(assets/img/slide/slider1.jpg)" }}
               >
                 <div className="carousel-container">
                   <div className="carousel-content">

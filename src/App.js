@@ -6,7 +6,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Competition from './pages/Competitions';
+import Competitions from './pages/competitions';
 import Display_profile from './pages/display_profile';
 import Dprofile_detail from './pages/dprofile_detail';
 import Edit_profile from './pages/edit_profile';
@@ -24,7 +24,7 @@ const App=()=> {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Competitions"element={<Competition/>} />
+        <Route path="/Competitions" element={<Competitions/>} />
         <Route path="/dprofile_detail" element={<Dprofile_detail/>} />
         <Route path="/display_profile" element={<Display_profile/>} />
         <Route path="/edit_profile" element={<Edit_profile/>}/>
