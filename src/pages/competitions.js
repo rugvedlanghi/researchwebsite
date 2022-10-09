@@ -72,10 +72,10 @@ const Competitions=() => {
           <section id="portfolio" className="portfolio">
             <div className="container">
               <div className="section-title">
-                <h2>Portfolio</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                <h2>Competitions</h2>
+                {/* <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                   consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-                  in iste officiis commodi quidem hic quas.</p>
+                  in iste officiis commodi quidem hic quas.</p> */}
               </div>
               <div className="row">
                 <div className="col-lg-12 d-flex justify-content-center">
@@ -103,7 +103,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.jpg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/SIH.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>Date</p>
@@ -116,7 +116,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/icpc.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>Date</p>
@@ -129,7 +129,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/codetech.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>Date</p>
@@ -142,7 +142,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/ieee_ext.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>Date</p>
@@ -155,7 +155,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/topcoder.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>date</p>
@@ -166,7 +166,7 @@ const Competitions=() => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                {/* <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                   <div className="portfolio-wrap">
                     <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
@@ -206,7 +206,7 @@ const Competitions=() => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>{/* End Portfolio Section */}
