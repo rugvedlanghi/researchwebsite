@@ -78,5 +78,5 @@ const editprofileschema = new mongoose.Schema({
 
 })
 
-const User1=mongoose.model('USER',editprofileschema);
-module.exports=User1;
+const Profile=mongoose.model('PROFILE',editprofileschema);
+module.exports=Profile;

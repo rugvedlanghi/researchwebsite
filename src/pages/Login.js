@@ -7,7 +7,7 @@ const  Login=() =>{
   const [user,setUser] = useState({
     name:"",password:""
   });
-  let name,value,password;
+  let name,value;
   const handleInputs=(e)=>{
     console.log(e)
     name=e.target.name;
