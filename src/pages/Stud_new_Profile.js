@@ -93,7 +93,9 @@ const Stud_new_Profile=() => {
                         <span><i className="fa fa-copy" /></span>
                       </div>
                       <div className="d-flex mt-2">
-                        <a href="dprofile_detail.html"><button className="btn1">view profile </button></a>
+                        <Link to="/edit_profile">
+                        <a><button className="btn1">view profile </button></a>
+                        </Link>
                       </div>
                       <div className="text mt-3">
                         <span>Eleanor Pena is a creator of minimalistic x bold graphics and
@@ -119,7 +121,9 @@ const Stud_new_Profile=() => {
                         <span><i className="fa fa-copy" /></span>
                       </div>
                       <div className="d-flex mt-2">
-                        <a href="dprofile_detail.html"><button className="btn1">view profile </button></a>
+                      <Link to="/edit_profile">
+                        <a><button className="btn1">view profile </button></a>
+                        </Link>
                       </div>
                       <div className="text mt-3">
                         <span>Eleanor Pena is a creator of minimalistic x bold graphics and
@@ -145,7 +149,9 @@ const Stud_new_Profile=() => {
                         <span><i className="fa fa-copy" /></span>
                       </div>
                       <div className="d-flex mt-2">
-                        <a href="dprofile_detail.html"><button className="btn1">view profile </button></a>
+                      <Link to="/edit_profile">
+                        <a><button className="btn1">view profile </button></a>
+                        </Link>
                       </div>
                       <div className="text mt-3">
                         <span>Eleanor Pena is a creator of minimalistic x bold graphics and
@@ -171,7 +177,9 @@ const Stud_new_Profile=() => {
                         <span><i className="fa fa-copy" /></span>
                       </div>
                       <div className="d-flex mt-2">
-                        <a href="dprofile_detail.html"><button className="btn1">view profile </button></a>
+                      <Link to="/edit_profile">
+                        <a><button className="btn1">view profile </button></a>
+                        </Link>
                       </div>
                       <div className="text mt-3">
                         <span>Eleanor Pena is a creator of minimalistic x bold graphics and

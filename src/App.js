@@ -9,7 +9,7 @@ import {
 import Competition from './pages/Competitions';
 import Display_profile from './pages/display_profile';
 import Dprofile_detail from './pages/dprofile_detail';
-// import Stud_new_Profile from './pages/Stud_new_Profile';
+import Edit_profile from './pages/edit_profile';
 import Researchpaper from './pages/Researchpaper';
 import Stud_about from './pages/Stud_about';
 import Stud_competition from './pages/Stud_competition';
@@ -27,7 +27,7 @@ const App=()=> {
         <Route path="/Competitions"element={<Competition/>} />
         <Route path="/dprofile_details" element={<Dprofile_detail/>} />
         <Route path="/display_profile" element={<Display_profile/>} />
-        {/* <Route path="/Stud_new_Profile" element={<Stud_new_Profile/>} /> */}
+        <Route path="/edit_profile" element={<Edit_profile/>}/>
         <Route path="/research_paper" element={<Researchpaper/>} />
         <Route path="/stud_about" element={<Stud_about/>} />
         <Route path="/stud_competition" element={<Stud_competition/>} />
