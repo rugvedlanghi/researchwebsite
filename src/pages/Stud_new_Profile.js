@@ -104,13 +104,13 @@ const Stud_new_Profile=() => {
           {/* ============== Profile =============== */}
           <section>
             <div className="container mt-4 mb-4 p-3 d-flex justify-content-center">
-              <h4>Profile</h4>
+              {/* <h4>Profile</h4> */}
               <div className="row">
                 <div className="col-lg-4 col-md-6 p-4">
                   <div className="card p-4">
                     <div className="image d-flex flex-column justify-content-center align-items-center">
                       <button className="btn btn-secondary">
-                        <img src="https://i.imgur.com/wvxPV9S.png" height={100} width={100} />
+                        <img src="assets/img/team/shiv.jpeg" height={100} width={100} />
                       </button>
                       <span className="name mt-3">Name</span> <span className="idd" />
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2">
@@ -138,7 +138,7 @@ const Stud_new_Profile=() => {
                   <div className="card p-4">
                     <div className="image d-flex flex-column justify-content-center align-items-center">
                       <button className="btn btn-secondary">
-                        <img src="https://i.imgur.com/wvxPV9S.png" height={100} width={100} />
+                        <img src="assets/img/team/sunantha.jpeg" height={100} width={100} />
                       </button>
                       <span className="name mt-3">Name</span> <span className="idd" />
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2">
@@ -166,7 +166,7 @@ const Stud_new_Profile=() => {
                   <div className="card p-4">
                     <div className="image d-flex flex-column justify-content-center align-items-center">
                       <button className="btn btn-secondary">
-                        <img src="https://i.imgur.com/wvxPV9S.png" height={100} width={100} />
+                        <img src="assets/img/team/aruna.jpeg" height={100} width={100} />
                       </button>
                       <span className="name mt-3">Name</span> <span className="idd" />
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2">
@@ -190,7 +190,7 @@ const Stud_new_Profile=() => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6 p-4">
+                {/* <div className="col-lg-4 col-md-6 p-4">
                   <div className="card p-4">
                     <div className="image d-flex flex-column justify-content-center align-items-center">
                       <button className="btn btn-secondary">
@@ -217,7 +217,7 @@ const Stud_new_Profile=() => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div></section>
         </main>
