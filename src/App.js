@@ -25,7 +25,7 @@ const App=()=> {
     <BrowserRouter>
       <Routes>
         <Route path="/Competitions"element={<Competition/>} />
-        <Route path="/dprofile_details" element={<Dprofile_detail/>} />
+        <Route path="/dprofile_detail" element={<Dprofile_detail/>} />
         <Route path="/display_profile" element={<Display_profile/>} />
         <Route path="/edit_profile" element={<Edit_profile/>}/>
         <Route path="/research_paper" element={<Researchpaper/>} />

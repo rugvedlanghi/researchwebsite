@@ -93,7 +93,7 @@ const Stud_new_Profile=() => {
                         <span><i className="fa fa-copy" /></span>
                       </div>
                       <div className="d-flex mt-2">
-                        <Link to="/edit_profile">
+                        <Link to="/dprofile_detail">
                         <a><button className="btn1">view profile </button></a>
                         </Link>
                       </div>
@@ -121,7 +121,7 @@ const Stud_new_Profile=() => {
                         <span><i className="fa fa-copy" /></span>
                       </div>
                       <div className="d-flex mt-2">
-                      <Link to="/edit_profile">
+                      <Link to="/dprofile_detail">
                         <a><button className="btn1">view profile </button></a>
                         </Link>
                       </div>
@@ -149,7 +149,7 @@ const Stud_new_Profile=() => {
                         <span><i className="fa fa-copy" /></span>
                       </div>
                       <div className="d-flex mt-2">
-                      <Link to="/edit_profile">
+                      <Link to="/dprofile_detail">
                         <a><button className="btn1">view profile </button></a>
                         </Link>
                       </div>
@@ -177,7 +177,7 @@ const Stud_new_Profile=() => {
                         <span><i className="fa fa-copy" /></span>
                       </div>
                       <div className="d-flex mt-2">
-                      <Link to="/edit_profile">
+                      <Link to="/dprofile_detail">
                         <a><button className="btn1">view profile </button></a>
                         </Link>
                       </div>
