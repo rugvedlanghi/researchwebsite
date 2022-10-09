@@ -59,10 +59,16 @@ const Dprofile_detail=() => {
                 </li>
               </ul>
             </li>
-            <Link to='/stud_feedback'>
-            <li><a className="nav-link scrollto">Feedback</a></li>
-            </Link>
-            <li><a className="getstarted scrollto" href="#about">Login</a></li>
+            <Link to="/stud_feedback">
+                <li>
+                  <a className="nav-link scrollto">Feedback</a>
+                </li>
+              </Link>
+            <Link to="/Login">
+                <li>
+                  <a className="getstarted scrollto">Login</a>
+                </li>
+              </Link>
           </ul>
           <i className="bi bi-list mobile-nav-toggle" />
         </nav>
