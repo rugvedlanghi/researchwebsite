@@ -3,17 +3,22 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const express = require('express');
 const User= require('./model/userSchema');
+
+const Profile= require('./model/editprofileschema');
 const app = express();
 //app.use(require('./router/auth'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(express.json());
+
 app.use(require('./router/auth'));
+app.use(require('./router/auth2'));
 //require('./db/conn');
 //app.use(express.json());
 //app.use(bodyParser.urlencoded({extended:true}));
 //app.use(bodyParser.json());
-
+//const User1= require('./model/editprofileschema');
+//app.use(require('./router/auth2'));
 dotenv.config({path:'./config.env'});
 require('./db/conn');
 const PORT = process.env.PORT;

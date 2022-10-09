@@ -1,7 +1,45 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {useState} from 'react';
+import {useNavigate} from 'react-router-dom'
+// import Profile from '../../server/model/editprofileschema';
 
 const Edit_profile=() => {
+  const navigate=useNavigate();
+  const [profile,setProfile] = useState({
+    name:"",srname:"",mno:"",edu:"",qua:"",aor:"",spe:"",tech:"",moc:"", certf:"",ack:"", shortprg:"",paper:"",project:"", add:"",exp:"",detail:""
+  });
+  let name,value;
+  const handleInputs=(e)=>{
+    console.log(e)
+    name=e.target.name;
+    value= e.target.value;
+    setProfile({...profile,[name]:value});
+  }
+  const PostData =async(e)=>{
+    e.preventDefault();
+    const {name,srname,mno,edu,qua,aor,spe,tech,moc, certf,ack, shortprg,paper,project, add,exp,detail}= profile;
+    const res= await fetch("/edit_profiles",{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+        name,srname,mno,edu,qua,aor,spe,tech,moc, certf,ack, shortprg,paper,project, add,exp,detail
+      })
+    });
+    const data = await res.json();
+ if(data.status === 422 || !data){
+  window.alert("Invalid Registration");
+  console.log("Invalid Registration");
+ }
+ else{
+  window.alert("Profile made Successfull");
+  console.log("profile made Registration");
+  navigate('/');
+ }
+}
+
   return (
     <div>
         {/* ======= Header ======= */}
@@ -79,6 +117,7 @@ const Edit_profile=() => {
         <main>
           {/* ============== Profile in details =============== */}
           <section>
+          <form  method="POST">
             <div className="container rounded bg-white mt-5 mb-5">
               <div className="row">
                 <div className="col-md-3 border-right">
@@ -89,24 +128,83 @@ const Edit_profile=() => {
                     <div className="d-flex justify-content-between align-items-center mb-3">
                       <h4 className="text-right">Profile Settings</h4>
                     </div>
+                   {/* <form  method="POST"> */}
                     <div className="row mt-2">
-                      <div className="col-md-6"><label className="labels">Name</label><input type="text" className="form-control" placeholder="first name" required /></div>
-                      <div className="col-md-6"><label className="labels">Surname</label><input type="text" className="form-control"  placeholder="surname" required /></div>
+                      <div className="col-md-6"><label className="labels">Name</label><input type="text" className="form-control" 
+                      id="name" name="name" value={profile.name} 
+                      onChange={handleInputs}
+                      placeholder="first name" required /></div>
+
+                      <div className="col-md-6"><label className="labels">Surname</label><input type="text" className="form-control"
+                      id="srname" name="srname" value={profile.srname} 
+                      onChange={handleInputs}  placeholder="surname" required /></div>
                     </div>
+
                     <div className="row mt-3">
-                      <div className="col-md-12"><label className="labels">Mobile Number</label><input type="text" className="form-control" placeholder="enter phone number"  /></div>
-                      <div className="col-md-12"><label className="labels">Education</label><input type="text" className="form-control" placeholder="enter data "  /></div>
-                      <div className="col-md-12"><label className="labels">Qualification</label><input type="text" className="form-control" placeholder="enter data "  /></div>
-                      <div className="col-md-12"><label className="labels">Area of Research</label><input type="text" className="form-control" placeholder="enter data "  /></div>
-                      <div className="col-md-12"><label className="labels">Specialization area</label><input type="text" className="form-control" placeholder="enter data "  /></div>
-                      <div className="col-md-12"><label className="labels">Technical skills</label><input type="text" className="form-control" placeholder="enter data "  /></div>
-                      <div className="col-md-12"><label className="labels">Member of Committes</label><input type="text" className="form-control" placeholder="enter data"  /></div>
-                      <div className="col-md-12"><label className="labels">Certification</label><input type="text" className="form-control" placeholder="enter data"  /></div>
-                      <div className="col-md-12"><label className="labels">Acknowledgement</label><input type="text" className="form-control" placeholder="enter data"  /></div>
-                      <div className="col-md-12"><label className="labels">Short term training programs attended</label><input type="text" className="form-control" placeholder="enter data"  /></div>
-                      <div className="col-md-12"><label className="labels">Papers presented and published</label><input type="text" className="form-control" placeholder="enter data"  /></div>
-                      <div className="col-md-12"><label className="labels">Projects Guided</label><input type="text" className="form-control" placeholder="enter data"  /></div>
-                      <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" placeholder="enter data"  /></div>
+                      <div className="col-md-12"><label className="labels">Mobile Number</label><input type="number" className="form-control"
+                      id="mno" name="mno" value={profile.mno} 
+                      onChange={handleInputs}
+                       placeholder="enter phone number"  /></div>
+
+                      <div className="col-md-12"><label className="labels">Education</label><input type="text" className="form-control" 
+                      id="edu" name="edu" value={profile.edu} 
+                      onChange={handleInputs}
+                      placeholder="enter data "  /></div>
+
+                      <div className="col-md-12"><label className="labels">Qualification</label><input type="text" className="form-control" 
+                      id="qua" name="qua" value={profile.qua} 
+                      onChange={handleInputs}
+                      placeholder="enter data "  /></div>
+
+                      <div className="col-md-12"><label className="labels">Area of Research</label><input type="text" className="form-control"
+                      id="aor" name="aor" value={profile.aor} 
+                      onChange={handleInputs}
+                      placeholder="enter data "  /></div>
+
+                      <div className="col-md-12"><label className="labels">Specialization area</label><input type="text" className="form-control" 
+                       id="spe" name="spe" value={profile.spe} 
+                       onChange={handleInputs}
+                      placeholder="enter data "  /></div>
+
+                      <div className="col-md-12"><label className="labels">Technical skills</label><input type="text" className="form-control" 
+                       id="tech" name="tech" value={profile.tech} 
+                       onChange={handleInputs}
+                      placeholder="enter data "  /></div>
+
+                      <div className="col-md-12"><label className="labels">Member of Committes</label><input type="text" className="form-control" 
+                       id="moc" name="moc" value={profile.moc} 
+                       onChange={handleInputs}
+                      placeholder="enter data"  /></div>
+
+                      <div className="col-md-12"><label className="labels">Certification</label><input type="text" className="form-control" 
+                       id="certf" name="certf"  value={profile.certf} 
+                       onChange={handleInputs}
+                      placeholder="enter data"  /></div>
+
+                      <div className="col-md-12"><label className="labels">Acknowledgement</label><input type="text" className="form-control"
+                       id="ack" name="ack" value={profile.ack} 
+                       onChange={handleInputs}
+                      placeholder="enter data"  /></div>
+
+                      <div className="col-md-12"><label className="labels">Short term training programs attended</label><input type="text" className="form-control"
+                      id="shortprg" name="shortprg" value={profile.shortprg} 
+                      onChange={handleInputs}
+                      placeholder="enter data"  /></div>
+
+                      <div className="col-md-12"><label className="labels">Papers presented and published</label><input type="text" className="form-control"
+                       id="paper"  name="paper" value={profile.paper} 
+                       onChange={handleInputs}
+                      placeholder="enter data"  /></div>
+
+                      <div className="col-md-12"><label className="labels">Projects Guided</label><input type="text" className="form-control" 
+                       id="project" name="project" value={profile.project} 
+                       onChange={handleInputs}
+                      placeholder="enter data"  /></div>
+
+                      <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" 
+                       id="add" name="add" value={profile.add} 
+                       onChange={handleInputs}
+                      placeholder="enter data"  /></div>
                     </div>
                     
                     {/* <div className="row mt-3"> */}
@@ -120,13 +218,21 @@ const Edit_profile=() => {
                   <div className="p-3 py-5">
                     {/* <div className="d-flex justify-content-between align-items-center experience"><span>Edit
                         Experience</span><span className="border px-3 p-1 add-experience"><i className="fa fa-plus" />&nbsp;Experience</span></div><br /> */}
-                    <div className="col-md-12"><label className="labels">Experience</label><input type="text" className="form-control" placeholder="experience" /></div> <br />
-                    <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" placeholder="additional details"  /></div>
+                    <div className="col-md-12"><label className="labels">Experience</label><input type="text" className="form-control" 
+                     id="exp" name="exp" value={profile.exp} 
+                     onChange={handleInputs}
+                    placeholder="experience" /></div> <br />
+                    <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" 
+                     id="detail" name="detail" value={profile.detail}
+                     onChange={handleInputs}
+                    placeholder="additional details"  /></div>
                   </div>
                 </div>
-                <div className="mt-5 text-center"><button className="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                <div className="mt-5 text-center"><button className="btn btn-primary profile-button"  onClick={PostData}  type="button">Save Profile</button></div>
               </div>
+            
             </div>
+            </form>
           </section>
           {/* ======= Footer ======= */}
           <footer id="footer">
