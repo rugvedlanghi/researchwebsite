@@ -345,4 +345,5 @@ const Competitions=() => {
       </div>
   )
 }
+
 export default Competitions;

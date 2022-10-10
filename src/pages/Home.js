@@ -271,18 +271,22 @@ const Home = () => {
       </section>
       <main id="main">
         <section className="home_journal">
-          <div>
-          {ericJournals.map((journal) => (
-            <Eric_JC
+          <div className="row">
+            <div className="col">
+              <div className="journals">
+              {ericJournals.map((journal) => (
+              <Eric_JC
               key={journal.id}
               title={journal.title}
               author={journal.author}
               publicationyear={journal.publicationdateyear}
               description={journal.description}
-            />
-          ))}
-          </div>
-          <div>
+              />
+              ))}
+             </div>
+            </div>
+            <div className="col">
+            <div className="journals">
           {springerJournals.map((journal) => (
             <Springer_JC
               key={journal.title}
@@ -291,6 +295,8 @@ const Home = () => {
               abstract={journal.abstract}
             />
           ))}
+          </div>
+            </div>
           </div>
         </section>
         {/* <section id="counts" className="counts">
