@@ -67,3 +67,7 @@
   .home_journal{
     display: flex;
   }
+
+  .journals{
+    padding: 2rem;
+  }

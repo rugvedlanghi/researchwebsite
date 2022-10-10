@@ -2,10 +2,10 @@ import React from 'react'
 
 const Springer_JC=({title,publisher,abstract}) => {
   return (
-    <div>
-        <p>{title}</p>
-        <p>{publisher}</p>
-        <p>{abstract}</p>
+    <div className='card'>
+        <p className='cardTitle'>{title}</p>
+        <p className='cardPubYear'>{publisher}</p>
+        <p className='cardDesc'>{abstract}</p>
     </div>
   )
 }

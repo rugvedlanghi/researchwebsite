@@ -6,7 +6,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Competition from './pages/Competitions';
+import Competition from './pages/competitions';
 import Display_profile from './pages/display_profile';
 import Dprofile_detail from './pages/dprofile_detail';
 import Edit_profile from './pages/edit_profile';
