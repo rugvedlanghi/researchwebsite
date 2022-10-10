@@ -29,12 +29,14 @@ const PostData =async(e)=>{
  const data = await res.json();
  if(data.status === 422 || !data){
   window.alert("Invalid Registration");
-  console.log("Invalid Registration");
+  // navigate('/Login');
+  // console.log("Invalid Registration");
  }
  else{
+  
   window.alert("Registration Successfull");
   console.log("Successfull Registration");
-  navigate('/');
+ navigate('/');
  }
 }
 
