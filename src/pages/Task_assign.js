@@ -107,7 +107,7 @@ const Task_assign=() => {
             <div className="container py-5 h-100">
               <div className="row d-flex justify-content-center align-items-center h-100">
                 <div className="col col-lg-9 col-xl-7">
-                  <div className="profilecard rounded-3">
+                  <div className="card rounded-3 bg-light">
                     <div className="card-body p-4">
                       <h4 className="text-center my-3 pb-3">Task Assign</h4>
                       <form className="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
