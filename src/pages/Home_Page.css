@@ -65,7 +65,7 @@
     transform: translate(-50%, -50%);
   }
   .home_journal{
-    display: flex;
+    display:block;
   }
 
   .journals{
