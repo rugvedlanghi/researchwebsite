@@ -107,7 +107,7 @@ const Stud_new_Profile=() => {
               {/* <h4>Profile</h4> */}
               <div className="row">
                 <div className="col-lg-4 col-md-6 p-4">
-                  <div className="card p-4">
+                  <div className="profilecard p-4">
                     <div className="image d-flex flex-column justify-content-center align-items-center">
                       <button className="btn btn-secondary">
                         <img src="assets/img/team/shiv.jpeg" height={100} width={100} />
@@ -135,7 +135,7 @@ const Stud_new_Profile=() => {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6 p-4">
-                  <div className="card p-4">
+                  <div className="profilecard p-4">
                     <div className="image d-flex flex-column justify-content-center align-items-center">
                       <button className="btn btn-secondary">
                         <img src="assets/img/team/sunantha.jpeg" height={100} width={100} />
@@ -163,7 +163,7 @@ const Stud_new_Profile=() => {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6 p-4">
-                  <div className="card p-4">
+                  <div className="profilecard p-4">
                     <div className="image d-flex flex-column justify-content-center align-items-center">
                       <button className="btn btn-secondary">
                         <img src="assets/img/team/aruna.jpeg" height={100} width={100} />
@@ -191,7 +191,7 @@ const Stud_new_Profile=() => {
                   </div>
                 </div>
                 {/* <div className="col-lg-4 col-md-6 p-4">
-                  <div className="card p-4">
+                  <div className="profilecard p-4">
                     <div className="image d-flex flex-column justify-content-center align-items-center">
                       <button className="btn btn-secondary">
                         <img src="https://i.imgur.com/wvxPV9S.png" height={100} width={100} />
