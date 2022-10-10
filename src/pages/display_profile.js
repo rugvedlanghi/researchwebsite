@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import "../css/d_profile.css"
 const Display_profile=() => {
   return (
     <div>

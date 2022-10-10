@@ -69,7 +69,7 @@ const Home = () => {
             <ul>
               <Link to="/">
                 <li>
-                  <a className="nav-link scrollto">Home</a>
+                  <a className="nav-link scrollto active">Home</a>
                 </li>
               </Link>
               <Link to="/stud_about">
