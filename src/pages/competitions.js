@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 
-const Competition=() => {
+const Competitions=() => {
   return (
     <div>
         {/* ======= Header ======= */}
@@ -275,4 +275,4 @@ const Competition=() => {
       </div>
   )
 }
-export default Competition 
+export default Competitions; 
