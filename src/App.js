@@ -1,5 +1,7 @@
 import './App.css';
 import Home from './pages/Home';
+import axios from 'axios';
+import React ,{useState,useEffect} from "react";
 import { createRoot } from "react-dom/client";
 import {
   BrowserRouter,
@@ -20,11 +22,19 @@ import Login from './pages/Login';
 import Competitions_details from './pages/Competitions_details';
 
 const App=()=> {
+  const [posts,setPosts] = useState([])
+  useEffect(()=>{
+    axios.get('http://localhost:3001/dprofile_detail')
+    .then(res=>setPosts(res.data))
+    .catch(error=>console.log(error));
+  })
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Competitions"element={<Competition/>} />
-        <Route path="/dprofile_details" element={<Dprofile_detail/>} />
+        <Route path="/Task_assign" element={<Task_assign/>} />
+        <Route path="/Report" element={<Report/>} />
+        <Route path="/Competitions" element={<Competitions/>} />
+        <Route path="/dprofile_detail" element={<Dprofile_detail posts={posts}/>} />
         <Route path="/display_profile" element={<Display_profile/>} />
         <Route path="/edit_profiles" element={<Edit_profile/>} />
         <Route path="/research_paper" element={<Researchpaper/>} />

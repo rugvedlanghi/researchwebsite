@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Dprofile_detail=() => {
+const Dprofile_detail=({posts}) => {
   return (
     <div>
     {/* ======= Header ======= */}
@@ -86,6 +86,11 @@ const Dprofile_detail=() => {
                 </div> */}
                 </div>
               </div>
+              {/* <div>
+              {posts.map((detail,key)=>(
+                <h2>{detail.name}</h2>
+              ))}
+              </div> */}
               <div className="col-md-6">
                 <div className="profile-head"><br />
                   <h5>

@@ -154,7 +154,7 @@ const Competitions=() => {
                       <div className="portfolio-links">
                         <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 3"><i className="bx bx-plus" /></a>
                         <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
-                      </div>
+                      </div>  
                     </div>
                   </div>
                 </div>
