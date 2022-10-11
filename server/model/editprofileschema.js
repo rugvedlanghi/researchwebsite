@@ -71,11 +71,6 @@ const editprofileschema = new mongoose.Schema({
         required:true
     }
     
-
-
-
-
-
 })
 
 const Profile=mongoose.model('PROFILE',editprofileschema);
