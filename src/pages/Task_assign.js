@@ -121,7 +121,7 @@ const Task_assign=() => {
                   <button type="submit" class="btn btn-primary">Save</button>
                 </div> */}
                         <div className="col-12">
-                          <button type="submit" className="btn btn-warning">Search Task</button>
+                          <button type="submit" className="btn btn-colour-primary">Search Task</button>
                         </div>
                       </form>
                       <table className="table mb-4">
@@ -140,7 +140,7 @@ const Task_assign=() => {
                             <td>In progress</td>
                             <td>
                               <Link to="/Report"> 
-                              <button type="submit" className="btn btn-warning" >View</button>
+                              <button type="submit" className="btn btn-colour-primary" >View</button>
                               </Link> 
                             </td>
                           </tr>
@@ -150,7 +150,7 @@ const Task_assign=() => {
                             <td>In progress</td>
                             <td>
                             <Link to="/Report"> 
-                              <button type="submit" className="btn btn-warning" >View</button>
+                              <button type="submit" className="btn btn-colour-primary" >View</button>
                               </Link>
                             </td>
                           </tr>
@@ -160,7 +160,7 @@ const Task_assign=() => {
                             <td>In progress</td>
                             <td>
                             <Link to="/Report"> 
-                              <button type="submit" className="btn btn-warning" >View</button>
+                              <button type="submit" className="btn btn-colour-primary" >View</button>
                               </Link>
                             </td>
                           </tr>

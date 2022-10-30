@@ -115,7 +115,7 @@ const Competitions=() => {
               <div className="row portfolio-container">
                 <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/mum_hack.jpeg" className="img-fluid " alt="" />
+                    <img src="assets/img/portfolio/mumbai.jpg" className="img-fluid " alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition </h4>
                       <p>date</p>
@@ -128,7 +128,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/SIH.jpeg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/sih.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>Date</p>
@@ -141,7 +141,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/icpc.jpeg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/icpc.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>Date</p>
@@ -154,7 +154,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/codetech.jpeg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/codetech.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>Date</p>
@@ -167,7 +167,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/ieee_ext.jpeg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/ieee.png" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>Date</p>
@@ -180,7 +180,7 @@ const Competitions=() => {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/topcoder.jpeg" className="img-fluid" alt="" />
+                    <img src="assets/img/portfolio/topcoder.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
                       <h4>Name Competition</h4>
                       <p>date</p>

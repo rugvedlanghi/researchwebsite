@@ -111,7 +111,7 @@ const Competitions_details=() => {
               <div className="competition-details-slider swiper">
                 <div className="swiper-wrapper align-items-center">
                   <div className="swiper-slide">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" alt="" />
+                    <img src="assets/img/portfolio/mum_hack.jpeg" alt="" />
                   </div>
                   <div className="swiper-slide">
                     <img src="assets/img/portfolio/portfolio-2.jpg" alt="" />
