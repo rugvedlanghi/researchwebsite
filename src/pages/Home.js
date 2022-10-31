@@ -364,7 +364,7 @@ const Home = () => {
             </div>
           </div>
         </section> */}
-        <section id="faq" className="faq section-bg">
+        {/* <section id="faq" className="faq section-bg">
           <div className="container">
             <div className="section-title">
               <h2>Popular Papers</h2>
@@ -507,8 +507,8 @@ const Home = () => {
               </ul>
             </div>
           </div>
-        </section>
-      </main>
+      </section> */}
+      </main> 
       <footer id="footer">
         <div className="footer-top">
           <div className="container">
