@@ -82,7 +82,7 @@ const Edit_profile=() => {
               </Link>
               <Link to="/Task_assign">
                 <li>
-                  <a className="nav-link scrollto">Task Assign</a>
+                  <a className="nav-link scrollto">Task</a>
                 </li>
               </Link>
               <li className="dropdown">
@@ -143,17 +143,18 @@ const Edit_profile=() => {
           <section>
           <form  method="POST">
             <div className="container rounded bg-white mt-5 mb-5">
-              <div className="row">
+              <div className="row"><h4 className="text-right">Profile Settings</h4>
                 <div className="col-md-3 border-right">
                   <div className="d-flex flex-column align-items-center text-center p-3 py-5"><img className="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" /><span className="font-weight-bold">username</span><span className="text-black-50">email</span><span> </span></div>
                 </div>
                 <div className="col-md-5 border-right">
                   <div className="p-3 py-5">
                     <div className="d-flex justify-content-between align-items-center mb-3">
-                      <h4 className="text-right">Profile Settings</h4>
+                      
                     </div>
                    {/* <form  method="POST"> */}
                     <div className="row mt-2">
+                      <h5>Personal information</h5>
                       <div className="col-md-6"><label className="labels">Name</label><input type="text" className="form-control" 
                       id="name" name="name" value={profile.name} 
                       onChange={handleInputs}
@@ -169,16 +170,38 @@ const Edit_profile=() => {
                       id="mno" name="mno" value={profile.mno} 
                       onChange={handleInputs}
                        placeholder="enter phone number"  /></div>
+                       <p><b /><br/><hr />
 
+</p><h5> Qualifications</h5>
                       <div className="col-md-12"><label className="labels">Education</label><input type="text" className="form-control" 
                       id="edu" name="edu" value={profile.edu} 
                       onChange={handleInputs}
                       placeholder="enter data "  /></div>
 
-                      <div className="col-md-12"><label className="labels">Qualification</label><input type="text" className="form-control" 
+                      <div className="col-md-12"><label className="labels">Accomplishments</label><input type="text" className="form-control" 
                       id="qua" name="qua" value={profile.qua} 
                       onChange={handleInputs}
                       placeholder="enter data "  /></div>
+
+                      
+                      <div className="col-md-12"><label className="labels">Experience</label><input type="text" className="form-control" 
+                     id="exp" name="exp" value={profile.exp} 
+                     onChange={handleInputs}
+                    placeholder="experience" /></div> <br />
+
+                      <div className="col-md-12"><label className="labels">Technical skills</label><input type="text" className="form-control" 
+                       id="tech" name="tech" value={profile.tech} 
+                       onChange={handleInputs}
+                      placeholder="enter data "  /></div>
+
+                      <div className="col-md-12"><label className="labels">Certification</label><input type="text" className="form-control" 
+                       id="certf" name="certf"  value={profile.certf} 
+                       onChange={handleInputs}
+                      placeholder="enter data"  /></div>
+                       <p><b /><br/><hr />
+
+</p><h5>Research</h5>
+
 
                       <div className="col-md-12"><label className="labels">Area of Research</label><input type="text" className="form-control"
                       id="aor" name="aor" value={profile.aor} 
@@ -190,20 +213,13 @@ const Edit_profile=() => {
                        onChange={handleInputs}
                       placeholder="enter data "  /></div>
 
-                      <div className="col-md-12"><label className="labels">Technical skills</label><input type="text" className="form-control" 
-                       id="tech" name="tech" value={profile.tech} 
-                       onChange={handleInputs}
-                      placeholder="enter data "  /></div>
-
+                     
                       <div className="col-md-12"><label className="labels">Member of Committes</label><input type="text" className="form-control" 
                        id="moc" name="moc" value={profile.moc} 
                        onChange={handleInputs}
                       placeholder="enter data"  /></div>
 
-                      <div className="col-md-12"><label className="labels">Certification</label><input type="text" className="form-control" 
-                       id="certf" name="certf"  value={profile.certf} 
-                       onChange={handleInputs}
-                      placeholder="enter data"  /></div>
+      
 
                       <div className="col-md-12"><label className="labels">Acknowledgement</label><input type="text" className="form-control"
                        id="ack" name="ack" value={profile.ack} 
@@ -225,12 +241,11 @@ const Edit_profile=() => {
                        onChange={handleInputs}
                       placeholder="enter data"  /></div>
 
-                      <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" 
-                       id="add" name="add" value={profile.add} 
-                       onChange={handleInputs}
-                      placeholder="enter data"  /></div>
+                     
                     </div>
-                    
+                    <p><b /><br/><hr />
+
+</p>                
                     {/* <div className="row mt-3"> */}
                       {/* <div className="col-md-6"><label className="labels">Projects Guided</label><input type="text" className="form-control" placeholder  /></div>
                       <div className="col-md-6"><label className="labels">info</label><input type="text" className="form-control"  placeholder /></div> */}
@@ -240,12 +255,14 @@ const Edit_profile=() => {
                 </div>
                 <div className="col-md-4">
                   <div className="p-3 py-5">
+    <h5> Additional</h5>
+
                     {/* <div className="d-flex justify-content-between align-items-center experience"><span>Edit
                         Experience</span><span className="border px-3 p-1 add-experience"><i className="fa fa-plus" />&nbsp;Experience</span></div><br /> */}
-                    <div className="col-md-12"><label className="labels">Experience</label><input type="text" className="form-control" 
-                     id="exp" name="exp" value={profile.exp} 
-                     onChange={handleInputs}
-                    placeholder="experience" /></div> <br />
+                     <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" 
+                       id="add" name="add" value={profile.add} 
+                       onChange={handleInputs}
+                      placeholder="enter data"  /></div>
                     <div className="col-md-12"><label className="labels">Additional Details</label><input type="text" className="form-control" 
                      id="detail" name="detail" value={profile.detail}
                      onChange={handleInputs}

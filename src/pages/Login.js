@@ -49,7 +49,7 @@ const PostData =async(e)=>{
           </div>
           <div className="col-md-6 loginmain ">
             <form  method="POST">
-              <h2 className="text-primary pt-3 mb-3">Login </h2>
+              <h2 className="text-colour-primary pt-3 mb-3">Login </h2>
               <input  type="text" className=" ibutton box text-black" id="name" name="name" 
               value={user.name}
               onChange={handleInputs}

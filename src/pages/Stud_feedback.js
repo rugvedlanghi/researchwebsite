@@ -44,7 +44,7 @@ const Stud_feedback=() => {
               </Link>
               <Link to="/Task_assign">
                 <li>
-                  <a className="nav-link scrollto">Task Assign</a>
+                  <a className="nav-link scrollto">Task</a>
                 </li>
               </Link>
               <li className="dropdown">

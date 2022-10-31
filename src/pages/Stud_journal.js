@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import SpringerApiComponent from '../component/SpringerApi'; 
 import Eric_API from '../component/Eric_API';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 import {
@@ -50,7 +51,7 @@ const Stud_journal=() => {
               </Link>
               <Link to="/Task_assign">
                 <li>
-                  <a className="nav-link scrollto">Task Assign</a>
+                  <a className="nav-link scrollto">Task</a>
                 </li>
               </Link>
               <li className="dropdown">
@@ -99,6 +100,106 @@ const Stud_journal=() => {
       <div>
         <br /><br /><br />
       </div>
+      <section id="hero">
+        <div className="hero-container">
+          <div
+            id="heroCarousel"
+            data-bs-interval={5000}
+            className="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <ol className="carousel-indicators" id="hero-carousel-indicators" />
+            <div className="carousel-inner" role="listbox">
+              <div
+                className="carousel-item active"
+                style={{ backgroundImage: "url(assets/img/slide/Myproject.jpg)" }}
+              >
+                <div className="carousel-container">
+                  <div className="carousel-content">
+                    <h2>Search</h2>
+                    {/* <form onSubmit={getSearch}>
+                      <div className="wrap">
+                        <div className="search">
+                          <input
+                            value={search}
+                            onChange={updateSearch}
+                            type="text"
+                            className="searchTerm"
+                            placeholder="What are you looking for?"
+                          />
+                          <button className="closeButton" onClick={searchClose}>
+                            <FontAwesomeIcon icon={faClose}/>
+                          </button>
+                          <button className="searchButton">
+                            <FontAwesomeIcon
+                              icon={faMagnifyingGlass}
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </form> */}
+                    {/* <div className="wrap">
+                      <div className="search">
+                        <input
+                          type="text"
+                          className="searchTerm"
+                          placeholder="What are you looking for?"
+                        />
+                        <button type="submit" className="searchButton">
+                          <FontAwesomeIcon icon={faMagnifyingGlass} />
+                        </button>
+                      </div>
+                    </div> */}
+                    <div className="black-font searchbar">
+                      <div className="gcse-search"></div>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="carousel-item"
+                style={{ backgroundImage: "url(assets/img/My project.jpg)" }}
+              >
+                {/* <div className="carousel-container">
+                    <div className="carousel-content">
+                      <h2 className="animate_animated animate_fadeInDown"></h2>
+                      <p className="animate_animated animate_fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi
+                        ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
+                        voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                      <div className="black-font searchbar">
+                        <div className="gcse-search" />
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
+                {/* <div className="carousel-item" style={{backgroundImage: 'url(assets/img/slide/slide-3.jpg)'}}> */}
+                {/* <div className="carousel-container">
+                    <div className="carousel-content">
+                      <h2 className="animate_animated animate_fadeInDown">Search bar</h2>
+                      <p className="animate_animated animate_fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi
+                        ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
+                        voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                      <div className="black-font searchbar">
+                        <div className="gcse-search"  />
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> */}
+              </div>
+            </div>
+            {/* <a className="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true" />
+              </a>
+              <a className="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true" />
+              </a> */}
+          </div>
+        </div>
+      </section>
       <section className='stud_js'>
         <Eric_API  />
         <SpringerApiComponent />
