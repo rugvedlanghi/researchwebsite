@@ -7,9 +7,23 @@
 text-align: left;
 }
 .card{
-    background-color: rgb(161, 210, 227);
+    background-color: rgb(114, 244, 142);
     padding: 1rem;
     margin: 1rem 0;
     border:  solid 0.5rem;
     border-color: rgba(0, 0, 0, 0.1);
+}
+.cardTitle{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.cardPubYear{
+    font-size: 1.5rem;
+}
+.CardAuthor{
+    font-size: 1.5rem;
+}
+.cardDesc{
+    font-size: 1rem;
+    
 }

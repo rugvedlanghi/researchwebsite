@@ -252,7 +252,8 @@ const Edit_profile=() => {
                     placeholder="additional details"  /></div>
                   </div>
                 </div>
-                <div className="mt-5 text-center"><button className="btn btn-primary profile-button"  onClick={PostData}  type="button">Save Profile</button></div>
+                <div className="mt-5 text-center"><button className="btn btn-primary profile-button"  onClick={PostData}  type="button">Save Profile</button>
+                </div>
               </div>
             
             </div>
