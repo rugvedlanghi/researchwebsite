@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom'
 import React from 'react'
 
 const Report=() => {
+  const reportsub=()=>{
+    window.alert("Submission successfull");
+  }
   return (
     <div>
     {/* ======= Header ======= */}
@@ -95,6 +98,7 @@ const Report=() => {
     </header>
     {/* End Header */}
     <main>
+      
       <div>
         <br /><br />
         <br /><br />
@@ -103,6 +107,7 @@ const Report=() => {
         <br />
       </div>
       {/* ============== task assign between mentor and Research scholar =============== */}
+    
       <div className="mb-3 px-5 container">
         <label htmlFor="status">Status :</label>
         <label htmlFor="status">In progress</label>
@@ -116,8 +121,12 @@ const Report=() => {
         </div><br /><br />
         {/* Form submit button */}
         <div className="d-grid">
-          <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+          <button className="btn btn-primary btn-lg disabled" id="submitButton" type="button" onClick={reportsub}>Submit</button>    
         </div>
+
+ 
+
+        
       </div>
       {/* ======= Footer ======= */}
       <footer id="footer">
