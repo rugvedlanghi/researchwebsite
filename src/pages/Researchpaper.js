@@ -96,14 +96,14 @@ const Researchpaper=() => {
             <div className="container">
               <div className="section-title">
                 <h2>Research pages</h2>
-                <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+                {/* <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p> */}
               </div>
               <div className="row">
                 <div className="col-lg-4">
                   <div className="box">
                     <span>01</span>
                     <h4>Author</h4>
-                    <p>information</p><br /><br />
+                    <p>Information</p><br /><br />
                     <a href="#">Link</a>
                   </div>
                 </div>
@@ -111,8 +111,7 @@ const Researchpaper=() => {
                   <div className="box">
                     <span>02</span>
                     <h4>Author</h4>
-                    <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para
-                      dest</p><br /><br />
+                    <p>Information</p><br /><br />
                     <a href="#">Link</a>    
                   </div>
                 </div>
@@ -120,7 +119,7 @@ const Researchpaper=() => {
                   <div className="box">
                     <span>03</span>
                     <h4> Author</h4>
-                    <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+                    <p>Information</p>
                     <br /><br /><a href="#">Link</a>
                   </div>
                 </div>
