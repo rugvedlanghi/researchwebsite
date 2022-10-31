@@ -116,7 +116,7 @@ const Stud_journal=() => {
               >
                 <div className="carousel-container">
                   <div className="carousel-content">
-                    <h2>Search</h2>
+                    {/* <h2>Search</h2> */}
                     {/* <form onSubmit={getSearch}>
                       <div className="wrap">
                         <div className="search">
