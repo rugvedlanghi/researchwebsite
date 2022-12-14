@@ -1,3 +1,4 @@
+const jwt = require('jsonwebtoken');
 const express = require('express');
 //const { append } = require('vary');
 const router = express.Router();
@@ -31,6 +32,7 @@ router.get('/', (req, res) => {
 // });
 
 router.post('/Login', async (req,res)=>{
+    let token;
     const {name,password}=req.body;
     if(!name || !password){
         return res.status(422).json({error:"Pls fill field properly"});
@@ -39,7 +41,14 @@ router.post('/Login', async (req,res)=>{
     try{
        const userExist= await User.findOne({name:name});
        if(userExist){
+        token = await userExist.generateAuthToken();
+        console.log(token);
+        res.cookie("jwtoken",token,{
+            expires:new Date(Date.now()+25892000000),
+            httpOnly:true
+        });
         return res.status(422).json({error:"Name already exists"});
+        
     }
 
     const user =new User({name,password});
@@ -59,6 +68,9 @@ router.post('/Login', async (req,res)=>{
     //    res.send(req.body);
 
 });
-
+// router.get('/about',  (req, res) => {
+//     console.log(`Hello my About`);
+//     res.send(`Hello About world from the server`);
+// });
 
 module.exports=router;

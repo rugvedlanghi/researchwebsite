@@ -63,10 +63,13 @@ router.get('/dprofile_detail', async (req,res) => {
     res.header('Access-Control-Allow-Origin', '*');
 	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     await getProfile()
-    console.log("hello")
-    res.json(data)
-    console.log(data)
-    // res.send(profile);
+    // console.log("hello")
+   // res.json(data)
+  console.log(data.push)
+    // res.send(data.push);
+    res.status(200).json(data.push)
+   
+    console.log(data);
 });
 
 

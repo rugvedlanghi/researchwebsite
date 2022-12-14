@@ -37,10 +37,10 @@ app.get('/', (req, res) => {
     res.send(`Hello world from the server app.js`);
 });
 
-app.get('/about', middleware, (req, res) => {
-    console.log(`Hello my About`);
-    res.send(`Hello About world from the server`);
-});
+// app.get('/about', middleware, (req, res) => {
+//     console.log(`Hello my About`);
+//     res.send(`Hello About world from the server`);
+// });
 
 app.get('/contact', (req, res) => {
     res.send(`Hello Contact world from the server`);

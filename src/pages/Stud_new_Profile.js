@@ -1,7 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useState,useEffect } from 'react';
 
 const Stud_new_Profile=() => {
+  const [profiles,setProfiles]=useState([]);
+  useEffect(() => {
+    const fetchApi = async () => {
+      const response = await fetch(
+        `http://localhost:5000/dprofile_detail`
+      );
+      const resJson = await response.json();
+      setProfiles({resJson});
+      console.log(resJson);
+      console.log("Hello 14")
+      console.log(profiles)
+    };
+    fetchApi();
+  }, []);
   return (
     <div>
         {/* ======= Header ======= */}

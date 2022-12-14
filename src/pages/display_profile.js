@@ -1,8 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../css/d_profile.css"
-const Display_profile=() => {
+import { useState,useEffect } from 'react'
+
+const Display_profile=({_id,name,srname,mno,edu,qua,aor,spe,tech,moc,certf,ack,shortprg,paper,project,add,exp,detail}) => {
+  console.log(name)
+  console.log(edu)
+  
+
   return (
+    
     <div>
     {/* ======= Header ======= */}
     <header id="header" className="fixed-top d-flex align-items-center">
