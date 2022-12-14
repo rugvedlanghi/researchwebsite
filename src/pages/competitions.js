@@ -117,10 +117,10 @@ const Competitions=() => {
                   <div className="portfolio-wrap">
                     <img src="assets/img/portfolio/mumbai.jpg" className="img-fluid " alt="" />
                     <div className="portfolio-info">
-                      <h4>Name Competition </h4>
+                      <h4>Mumbai Hackathon </h4>
                       <p>date</p>
                       <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bx bx-plus" /></a>
+                        {/* <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bx bx-plus" /></a> */}
                         <a href="Competitions_details" title="More Details"><i className="bx bx-link" /></a>
                       </div>
                     </div>
@@ -130,11 +130,11 @@ const Competitions=() => {
                   <div className="portfolio-wrap">
                     <img src="assets/img/portfolio/sih.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Name Competition</h4>
+                      <h4>Smart India Hackathon</h4>
                       <p>Date</p>
                       <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus" /></a>
-                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                        {/* <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus" /></a> */}
+                        <a href="Competitions_details" title="More Details"><i className="bx bx-link" /></a>
                       </div>
                     </div>
                   </div>
@@ -143,11 +143,11 @@ const Competitions=() => {
                   <div className="portfolio-wrap">
                     <img src="assets/img/portfolio/icpc.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Name Competition</h4>
+                      <h4>ICPC</h4>
                       <p>Date</p>
                       <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 2"><i className="bx bx-plus" /></a>
-                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                        {/* <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 2"><i className="bx bx-plus" /></a> */}
+                        <a href="Competitions_details" title="More Details"><i className="bx bx-link" /></a>
                       </div>
                     </div>
                   </div>
@@ -156,11 +156,11 @@ const Competitions=() => {
                   <div className="portfolio-wrap">
                     <img src="assets/img/portfolio/codetech.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Name Competition</h4>
+                      <h4>codetech</h4>
                       <p>Date</p>
                       <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 2"><i className="bx bx-plus" /></a>
-                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                        {/* <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 2"><i className="bx bx-plus" /></a> */}
+                        <a href="Competitions_details" title="More Details"><i className="bx bx-link" /></a>
                       </div>
                     </div>
                   </div>
@@ -169,11 +169,11 @@ const Competitions=() => {
                   <div className="portfolio-wrap">
                     <img src="assets/img/portfolio/ieee.png" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Name Competition</h4>
+                      <h4>IEEE Extreme</h4>
                       <p>Date</p>
                       <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 2"><i className="bx bx-plus" /></a>
-                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                        {/* <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 2"><i className="bx bx-plus" /></a> */}
+                        <a href="Competitions_details" title="More Details"><i className="bx bx-link" /></a>
                       </div>
                     </div>
                   </div>
@@ -182,11 +182,11 @@ const Competitions=() => {
                   <div className="portfolio-wrap">
                     <img src="assets/img/portfolio/topcoder.jpg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Name Competition</h4>
+                      <h4>Topcoder</h4>
                       <p>date</p>
                       <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 3"><i className="bx bx-plus" /></a>
-                        <a href="competition-details.html" title="More Details"><i className="bx bx-link" /></a>
+                        {/* <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 3"><i className="bx bx-plus" /></a> */}
+                        <a href="Competitions_details" title="More Details"><i className="bx bx-link" /></a>
                       </div>  
                     </div>
                   </div>
