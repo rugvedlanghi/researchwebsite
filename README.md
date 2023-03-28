@@ -41,7 +41,8 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ###Specalities 
 
-Project uses API to that fetches information regarding Journals or PhD papers of certain related topic from ERIC & SPRINGER
+Project uses API to that fetches information regarding Journals or PhD papers of certain related topic from ERIC & SPRINGER.
+It has dedicated page for college professors to upload there PhD papers and topic of specalization so that students can come in contact with the person to build project related to their speciality.
 
 ## Learn More
 
