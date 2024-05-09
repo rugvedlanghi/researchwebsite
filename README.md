@@ -1,6 +1,7 @@
 ![1](https://github.com/rugvedlanghi/researchwebsite/assets/89995278/a24daeea-3373-4923-add1-7692f1d9417e)
 ![2](https://github.com/rugvedlanghi/researchwebsite/assets/89995278/116281a2-8aa0-422c-b55b-4531d3ed8f34)
 ![3](https://github.com/rugvedlanghi/researchwebsite/assets/89995278/1ab293ce-64f5-476d-abcc-fe94802e7777)
+![5](https://github.com/rugvedlanghi/researchwebsite/assets/89995278/6143d629-c2be-460d-b376-cd444868db4e)
 
 # Getting Started with Create React App
 
